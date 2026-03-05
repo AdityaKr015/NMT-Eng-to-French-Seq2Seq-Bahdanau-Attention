@@ -126,6 +126,24 @@ The trained model was saved as:
 
 nmt_model_full.keras
 
+## 🔍 Example Translation
+
+EN: Hello, how are you?
+
+FR: écoutez comment vous êtes
+
+EN: I love Paris in the spring.
+
+FR: j'aime voyager sur le printemps
+
+EN: Can you speak more slowly please?
+
+FR: peux tu parler plus lentement s'il vous plaît
+
+EN: She is reading a book.
+
+FR: elle lit un livre
+
 <img width="1826" height="2566" alt="558564537-a4156778-fb9a-4ca6-a1b4-b4d02a88f485" src="https://github.com/user-attachments/assets/4bf4475a-e633-4032-9d5e-8e60a0a89b99" />
 
 
