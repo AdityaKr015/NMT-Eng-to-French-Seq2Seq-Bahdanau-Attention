@@ -1,10 +1,16 @@
-# NMT-Eng-to-French-Seq2Seq-Bahdanau-Attention
+# English → French Neural Machine Translation
+Seq2Seq + Bahdanau Attention
 
 🧠 Neural Machine Translation (NMT) – English to French Translator
 This project is a Neural Machine Translation (NMT) system that translates English sentences into French using a Sequence-to-Sequence (Seq2Seq) architecture with Bahdanau Attention Mechanism and Beam Search Decoding. The model is built using TensorFlow and deployed through Hugging Face Space and Model hub for backend,frontend using Gradio.
 
 Live Demo:- [![HuggingFace Space](https://img.shields.io/badge/🤗%20HuggingFace-Space-blue?style=for-the-badge)](https://huggingface.co/spaces/AdiKr25/NMT_Eng-to-French_Seq2Seq_Bahdanau_Attention)
 
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange?logo=tensorflow)
+![Gradio](https://img.shields.io/badge/Gradio-WebApp-red?logo=gradio)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-Deployment-yellow?logo=huggingface)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 It simulates how real-world translation systems like Google Translate work — encoding a sentence in one language and decoding it into another using deep learning.
 
@@ -104,6 +110,19 @@ Results:
 <img width="1256" height="727" alt="image" src="https://github.com/user-attachments/assets/f74cfa1d-8019-41cb-9064-a61f26d2b13f" />
 
 Stats:
+## 📊 Training Results
+
+### Training Curves
+![Training](images/training_curves.png)
+
+### Dataset Statistics
+![Dataset](images/dataset_statistics.png)
+
+### BLEU Scores
+![BLEU](images/bleu_scores.png)
+
+### Attention Visualization
+![Attention](images/attention_heatmap.png)
 
 <img width="2083" height="1475" alt="dataset_statistics (1)" src="https://github.com/user-attachments/assets/cddfe9e8-4c0d-4c88-af1a-5c3b77300faa" />
 
