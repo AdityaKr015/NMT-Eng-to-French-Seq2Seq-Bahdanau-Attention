@@ -1,0 +1,8 @@
+tensorflow
+gradio
+numpy
+matplotlib
+nltk
+scikit-learn
+seaborn
+huggingface_hub
