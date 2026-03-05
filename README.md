@@ -1,1 +1,1 @@
-# NMT-Eng-to-French-Seq2Seq2-Bahdanau-Attention
+# NMT-Eng-to-French-Seq2Seq-Bahdanau-Attention
