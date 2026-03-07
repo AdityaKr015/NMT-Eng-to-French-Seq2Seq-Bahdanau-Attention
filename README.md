@@ -1,7 +1,8 @@
 # English → French Neural Machine Translation
 Seq2Seq + Bahdanau Attention
 
-🧠 Neural Machine Translation (NMT) – English to French Translator
+## 🧠 Neural Machine Translation (NMT) – English to French Translator
+
 This project is a Neural Machine Translation (NMT) system that translates English sentences into French using a Sequence-to-Sequence (Seq2Seq) architecture with Bahdanau Attention Mechanism and Beam Search Decoding. The model is built using TensorFlow and deployed using Hugging Face Spaces with a Gradio interface.
 
 Live Demo:- [![HuggingFace Space](https://img.shields.io/badge/🤗%20HuggingFace-Space-blue?style=for-the-badge)](https://huggingface.co/spaces/AdiKr25/NMT_Eng-to-French_Seq2Seq_Bahdanau_Attention)
@@ -23,7 +24,7 @@ The full model training pipeline can be found here:
 The model was trained using the **Tatoeba English–French parallel dataset**
 from the ManyThings.org collection.
 
-Dataset Source:
+### Dataset Source:
 https://www.manythings.org/anki/
 
 The dataset contains sentence pairs extracted from the
@@ -39,7 +40,7 @@ For this project:
 
 It simulates how real-world translation systems like Google Translate work — encoding a sentence in one language and decoding it into another using deep learning.
 
-🚀 Project Overview
+## 🚀 Project Overview
 
 Language translation is one of the most fascinating tasks in Natural Language Processing (NLP). Traditional approaches like rule-based systems or statistical translation models fail to capture the contextual meaning of sentences. This project overcomes those limitations by implementing a deep learning–based neural translation system.
 
@@ -49,23 +50,23 @@ To further improve translation quality, the model uses an Attention mechanism, a
 
 Additionally, Beam Search decoding is used during inference to explore multiple translation possibilities simultaneously, resulting in smoother, more accurate translations compared to simple greedy decoding.
 
-🧩 Model Architecture
+## 🧩 Model Architecture
 
 The architecture of this project is divided into three key parts — Encoder, Attention, and Decoder:
 
-Encoder:
+### Encoder:
 
 The Encoder is a Bidirectional GRU network that reads the English sentence and converts it into context representations. It captures both forward and backward dependencies, which helps understand the full meaning of the input sequence.
 
-Bahdanau Attention:
+### Bahdanau Attention:
 
 The Attention mechanism computes a weighted sum of the encoder outputs for every decoder time step. This allows the model to focus on the most relevant parts of the input sentence while generating each French word.
 
-Decoder:
+### Decoder:
 
 The Decoder is also a GRU network that uses the context vector from the attention mechanism along with the previously predicted tokens to generate the French translation.
 
-🔍 Beam Search in Translation
+### 🔍 Beam Search in Translation
 
 During inference, a Beam Search algorithm is applied instead of greedy decoding.
 While greedy decoding only selects the single most probable word at each step, Beam Search keeps track of the top k most probable sequences (beams).
@@ -74,7 +75,7 @@ For every new predicted word, the algorithm expands all current beams and select
 
 Beam Search improves translation quality by keeping the top-k most probable translation sequences instead of selecting only the best token at each step.
 
-⚙️ Backend – Hugging Face
+## ⚙️ Backend – Hugging Face
 
 The backend is built using Hugging Face, open source AI platform and community for dataset,model. 
 
@@ -96,13 +97,13 @@ The backend workflow is as follows:
 
 • Beam Search generates the final translation
 
-🎨 Frontend – Gradio
+## 🎨 Frontend – Gradio
 
 Gradio is an open-source Python library used to build interactive web interfaces for machine learning models.
 
 The frontend is a simple yet clean user interface . It contains a text box where the user can enter a English sentence, a “Translate” button to send the request, and an output section to display the translated French sentence.
 
-🧠 Training and Model Files
+## 🧠 Training and Model Files
 
 The model was trained on an English-French parallel corpus, preprocessed with tokenization, padding, and word indexing using Keras Tokenizer. The training process involved:
 
@@ -147,11 +148,10 @@ FR: elle lit un livre
 <img width="1826" height="2566" alt="558564537-a4156778-fb9a-4ca6-a1b4-b4d02a88f485" src="https://github.com/user-attachments/assets/4bf4475a-e633-4032-9d5e-8e60a0a89b99" />
 
 
-Results:
+## Results:
 
 <img width="1256" height="727" alt="image" src="https://github.com/user-attachments/assets/f74cfa1d-8019-41cb-9064-a61f26d2b13f" />
 
-Stats:
 ## 📊 Training Results
 
 ### Training Curves
@@ -167,7 +167,7 @@ Stats:
 ![Attention](images/attention_heatmap.png)
 
 
-🧰 Folder Structure
+## 🧰 Folder Structure
 
 ```bash
 nmt-english-french/
@@ -192,27 +192,35 @@ nmt-english-french/
 │   └── attention_heatmap.png
 ```
 
-🧪 How to Run the Project
+## 🧪 How to Run the Project
 
-Clone the repository:
+### Clone the repository:
 
+```bash
 git clone https://github.com/yourusername/NMT-Eng-to-French-Seq2Seq-Bahdanau-Attention.git
 
 cd nmt-translator
+```
 
-Create and activate a virtual environment:
+### Create and activate a virtual environment:
 
+```bash
 venv\Scripts\activate  # for Windows
 
 source venv/bin/activate  # for Mac/Linux
+```
 
-Install dependencies:
+### Install dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
-Run the application:
+### Run the application:
 
+```bash
 python app.py
+```
 
 After starting, Gradio will generate a local URL (usually):
 
@@ -220,7 +228,7 @@ http://127.0.0.1:7860
 
 Open the link in your browser, enter an English sentence, and the model will generate the French translation along with the attention heatmap.
 
-🔬 Future Improvements
+## 🔬 Future Improvements
 
 • Replace Seq2Seq with Transformer architecture
 
