@@ -227,3 +227,14 @@ Open the link in your browser, enter an English sentence, and the model will gen
 - Use Subword tokenization (BPE or SentencePiece)
 - Add multilingual translation support
 - Improve inference speed with optimized decoding
+
+### 📜 License
+
+MIT License
+
+### 👨‍💻 Author
+
+Aditya Kumar (AI / ML Student)
+
+Project created for learning Neural Machine Translation and Core of NLP.
+
