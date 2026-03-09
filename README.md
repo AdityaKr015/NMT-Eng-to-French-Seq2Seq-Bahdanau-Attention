@@ -1,5 +1,4 @@
 # English → French Neural Machine Translation
-Seq2Seq + Bahdanau Attention
 
 ## 🧠 Neural Machine Translation (NMT) – English to French Translator
 
@@ -85,17 +84,12 @@ Hugging Face Model Hub for deployment of saved keras model file.
 
 The backend workflow is as follows:
 
-• Hugging Face Spaces installs dependencies from requirements.txt
-
-• app.py is executed as the application entry point
-
-• Tokenizers and configuration files are loaded
-
-• The trained model is downloaded from Hugging Face Model Hub
-
-• Input sentences are preprocessed and passed through the encoder–decoder model
-
-• Beam Search generates the final translation
+- Hugging Face Spaces installs dependencies from requirements.txt
+- app.py is executed as the application entry point
+- Tokenizers and configuration files are loaded
+- The trained model is downloaded from Hugging Face Model Hub
+- Input sentences are preprocessed and passed through the encoder–decoder model
+- Beam Search generates the final translation
 
 ## 🎨 Frontend – Gradio
 
@@ -117,15 +111,13 @@ Optimizing with the Adam optimizer and Sparse Categorical Crossentropy loss.
 
 After training, the trained artifacts saved as:
 
-eng_tokenizer.pkl
-
-config.pkl
-
-fra_tokenizer.pkl
+- eng_tokenizer.pkl
+- config.pkl
+- fra_tokenizer.pkl
 
 The trained model was saved as:
 
-nmt_model_full.keras
+- nmt_model_full.keras
 
 ## 🔍 Example Translation
 
@@ -147,7 +139,6 @@ FR: elle lit un livre
 
 <img width="1826" height="2566" alt="558564537-a4156778-fb9a-4ca6-a1b4-b4d02a88f485" src="https://github.com/user-attachments/assets/4bf4475a-e633-4032-9d5e-8e60a0a89b99" />
 
-
 ## Results:
 
 <img width="1256" height="727" alt="image" src="https://github.com/user-attachments/assets/f74cfa1d-8019-41cb-9064-a61f26d2b13f" />
@@ -165,7 +156,6 @@ FR: elle lit un livre
 
 ### Attention Visualization
 ![Attention](images/attention_heatmap.png)
-
 
 ## 🧰 Folder Structure
 
@@ -230,12 +220,8 @@ Open the link in your browser, enter an English sentence, and the model will gen
 
 ## 🔬 Future Improvements
 
-• Replace Seq2Seq with Transformer architecture
-
-• Train on larger datasets like WMT14
-
-• Use Subword tokenization (BPE or SentencePiece)
-
-• Add multilingual translation support
-
-• Improve inference speed with optimized decoding
+- Replace Seq2Seq with Transformer architecture
+- Train on larger datasets like WMT14
+- Use Subword tokenization (BPE or SentencePiece)
+- Add multilingual translation support
+- Improve inference speed with optimized decoding
