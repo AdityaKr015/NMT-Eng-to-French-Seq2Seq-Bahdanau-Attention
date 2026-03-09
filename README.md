@@ -6,6 +6,8 @@ This project is a Neural Machine Translation (NMT) system that translates Englis
 
 Live Demo:- [![HuggingFace Space](https://img.shields.io/badge/🤗%20HuggingFace-Space-blue?style=for-the-badge)](https://huggingface.co/spaces/AdiKr25/NMT_Eng-to-French_Seq2Seq_Bahdanau_Attention)
 
+Model:- [![HuggingFace Space](https://img.shields.io/badge/🤗%20HuggingFace-Space-blue?style=for-the-badge)](https://huggingface.co/AdiKr25/nmt_model)
+
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange?logo=tensorflow)
 ![Gradio](https://img.shields.io/badge/Gradio-WebApp-red?logo=gradio)
